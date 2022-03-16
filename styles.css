@@ -15,6 +15,11 @@ h1 {
     font-size: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header {
     border-bottom: 2px solid #414247;
     width: 100%;
@@ -34,32 +39,31 @@ header {
 }
 
 .name {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 700;
 }
 
 /* layout */
 
 /* color-bar */
-.color-bar {
-    display: flex;
-    height: 0.5em;
+table {
+    border-collapse: collapse;
 }
-
-.red {
-    width: 25%;
+td {
+    width: 25vw;
+    height: 8px;
+    padding: 0px;
+}
+.color1 {
     background-color: #ed5b42;
 }
-.orange {
-    width: 25%;
+.color2 {
     background-color: #f4aa85;
 }
-.light-blue {
-    width: 25%;
+.color3 {
     background-color: #c3dae0;
 }
-.dark-blue {
-    width: 25%;
+.color4 {
     background-color: #414247;
 }
 
@@ -70,7 +74,6 @@ header {
     width: 90%;
     margin: 0 auto;
 }
-
 
 .nav-list {
     display: flex;
@@ -84,8 +87,6 @@ header {
 
 .nav-link {
     font-weight: 700;
-    color: black;
-    text-decoration: none;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -133,7 +134,7 @@ header {
 }
 
 .main-info > div {
-    width: 70%;
+    width: 80%;
 }
 
 .img-hero {
@@ -153,6 +154,82 @@ header {
     padding: 1em;
     border-radius: 24px;
 } */
+
+/* footer */
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #414247;
+    border-top-right-radius: 24px;
+    max-height: 100px;
+}
+
+.text-center {
+    text-align: center;
+    font-weight: 700;
+}
+
+.socials-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    max-width: 250px;
+    justify-content: space-between;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    padding: 0.4em;
+    border-radius: 50%;
+}   
+
+.fa-github {
+    color: #ef347b;
+    background-color: #fbeef5;
+}
+
+.fa-linkedin-in {
+    color: #0056e3;
+    background-color: #eff4fa;
+}
+
+.fa-twitter {
+    color: #8905d5;
+    background-color: #f4eefc;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;  
+    text-align: center; 
+}
+
+.footer-nav-list  {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    border: 1px solid gray;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-name {
+    font-weight: 700;
+}
+
+.copyright-text {
+    font-size: 0.8rem;
+}
 
 @media (max-width: 820px) {
     h1 {
@@ -187,5 +264,13 @@ header {
     .main-info {
         width: 100%;
         text-align: center;
+    }
+
+    .main-info > div {
+        width: 100%;
+    }
+
+    .footer-list {
+        flex-direction: column;
     }
 }
