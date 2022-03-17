@@ -15,6 +15,10 @@ h1 {
     font-size: 1.5rem;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -138,8 +142,9 @@ td {
 }
 
 .img-hero {
-    display: block;
+    /* display: block; */
     width: 50%;
+    object-fit: cover;
 }
 
 /* for future */
@@ -155,6 +160,158 @@ td {
     border-radius: 24px;
 } */
 
+/* technologies */
+
+.section-tech {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.container-tech {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    display: flex;
+    width: 80%;
+    /* background-color: #f7f2ec; */
+    border-radius: 24px;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: ; */
+    /* border: 1px solid black; */
+}
+
+.tech-info {
+    display: flex;
+    width: 40%;
+    /* padding: 4em 6em; */
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-info > div {
+    /* border: 1px solid black; */
+    width: 70%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.logo-tech {
+    background-color: #f9d9b3;
+}
+
+.tech-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3em;
+    justify-content: space-between;
+    align-content: center;
+    align-items: start;
+    gap: 2em 0;
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tech-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+/* projects */
+
+.section-projects {
+    margin: 3em 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.container-projects {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    display: flex;
+    width: 80%;
+    border-radius: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects-hero {
+    /* border: 1px solid black; */
+    /* display: block; */
+    width: 100%;
+    height: auto;
+    /* max-width: 550px; */
+    /* border: 24px; */
+    /* object-fit: cover; */
+    margin: 1em;
+}
+
+.projects-info {
+    display: flex;
+    width: 50%;
+    padding: 2em 1em;
+    /* padding: 4em 6em; */
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-info > div {
+    /* border: 1px solid black; */
+    width: 80%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.logo-projects {
+    background-color: #d7f2f9;
+}
+
+.logo-blogs {
+    background-color: #d6e1ff;
+}
+
+.link-primary {
+    display: block;
+    background-color: #3c394a;
+    width: fit-content;
+    border-radius: 10px;
+    color: white;
+    margin-top: 1.5em;
+    padding: 1em 2em;
+}
+
 /* footer */
 
 .container-footer {
@@ -164,6 +321,7 @@ td {
     border-top: 2px solid #414247;
     border-top-right-radius: 24px;
     max-height: 100px;
+    margin-top: 10rem;
 }
 
 .text-center {
@@ -231,11 +389,61 @@ td {
     font-size: 0.8rem;
 }
 
+.red {
+    color: #ef4444;
+    background-color: #fee2e2;
+}
+
+.orange {
+    color: #f97316;
+    background-color: #ffedd5;
+}
+
+.yellow {
+    color: #eab308;
+    background-color: #fef9c3;
+}
+
+.green {
+    color: #22c55e;
+    background-color: #dcfce7;
+}
+
+.blue {
+    color: #3b82f6;
+    background-color: #dbeafe;
+}
+
+.indigo {
+    color: #6366f1;
+    background-color: #e0e7ff;
+}
+
+.pink {
+    color: #ec4899;
+    background-color: #fce7f3;
+}
+
+.rose {
+    color: #f43f5e;
+    background-color: #ffe4e6;
+}
+
+.cyan {
+    color: #06b6d4;
+    background-color: #cffafe;
+}
+
+.project {
+    border: 1px solid black;
+    background-image: url("./assets/project-lucky-bday.png");
+}
+
 @media (max-width: 820px) {
     h1 {
         margin-bottom: 0;
     }
-    .navbar {
+    .navbar, header {
         width: 100%;
     }
     .nav-list {
@@ -261,16 +469,58 @@ td {
         max-width: 350px;
     }
 
-    .main-info {
+    .main-info, .tech-info, .projects-info {
         width: 100%;
         text-align: center;
     }
 
-    .main-info > div {
-        width: 100%;
+    .projects-info {
+        order: -1;
+    }
+
+    .main-info > div,
+    .tech-info > div,
+    .projects-info > div {
+        width: 95%;
+    }
+
+    .container-tech, .container-projects {
+        flex-direction: column;
+    }
+
+    .section-tech {
+        justify-content: center;
+    }
+
+    .container-tech {
+        width: 90%;
+    }
+
+    .projects-hero {
+        margin: 0;
     }
 
     .footer-list {
         flex-direction: column;
+    }
+
+    .logo {
+        margin: 1em auto;
+    }
+
+    .tech-logos {
+        gap: 0.5em;
+        width: 90%;
+        padding: 1em;
+    }
+
+    .tech-icon {
+        height: 3rem;
+        width: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .link-primary {
+        margin: 0 auto;
     }
 }
