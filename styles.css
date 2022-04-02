@@ -636,4 +636,13 @@ td {
     .link-primary {
         margin: 0 auto;
     }
+
+    .projects {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .project-item {
+        margin: 1rem;
+    }
 }
