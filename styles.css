@@ -547,6 +547,14 @@ td {
     background-color: #fda4af;
 }
 
+.link-teal {
+    background-color: #14b8a6;
+}
+
+.link-teal-light {
+    background-color: #5eead4;
+}
+
 @media (max-width: 820px) {
     h1 {
         margin-bottom: 0;
