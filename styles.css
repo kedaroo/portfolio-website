@@ -484,76 +484,37 @@ td {
 }
 
 .link-red {
-    background-color: #ef4444;
+    background-color: #ed5b42;
 }
 
 .link-red-light {
-    background-color: #fca5a5;
+    background-color: #f08e7d;
 }
 
 .link-orange {
-    background-color: #f97316;
+    background-color: #f48248;
 }
 
 .link-orange-light {
-    background-color: #fdba74;
-}
-
-.link-lime {
-    background-color: #84cc16;
-}
-
-.link-lime-light {
-    background-color: #bef264;
-}
-
-.link-green {
-    background-color: #22c55e;
-}
-
-.link-green-light {
-    background-color: #86efac;
+    background-color: #f6b08e;
 }
 
 .link-blue {
-    background-color: #3b82f6;
+    background-color: #72daf4;
 }
 
 .link-blue-light {
-    background-color: #93c5fd;
+    background-color: #a5ebfc;
 }
 
-.link-violet {
-    background-color: #8b5cf6;
+.link-gray {
+    background-color: #414247;
 }
 
-.link-violet-light {
-    background-color: #c4b5fd;
+.link-gray-light {
+    background-color: #74767f;
 }
 
-.link-pink {
-    background-color: #ec4899;
-}
-
-.link-pink-light {
-    background-color: #f9a8d4;
-}
-
-.link-rose {
-    background-color: #f43f5e;
-}
-
-.link-rose-light {
-    background-color: #fda4af;
-}
-
-.link-teal {
-    background-color: #14b8a6;
-}
-
-.link-teal-light {
-    background-color: #5eead4;
-}
 
 @media (max-width: 820px) {
     h1 {
