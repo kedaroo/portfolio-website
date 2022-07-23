@@ -1,208 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <title>kedar's portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <table>
-            <tr>
-                <td class="color1"></td>
-                <td class="color2"></td>
-                <td class="color3"></td>
-                <td class="color4"></td>
-            </tr>
-        </table>
-        <div class="container-header">
-            <h1>
-                <a href="index.html">kedar basutkar</a>
-            </h1>
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li class="nav-li">
-                        <a class="nav-link" href="index.html">home</a>
-                    </li>
-                    <li class="nav-li">
-                        <a class="nav-link current-page" href="projects.html">projects</a>
-                    </li>
-                    <!-- <li class="nav-li">
+      <table>
+        <tr>
+          <td class="color1"></td>
+          <td class="color2"></td>
+          <td class="color3"></td>
+          <td class="color4"></td>
+        </tr>
+      </table>
+      <div class="container-header">
+        <h1>
+          <a href="index.html">kedar basutkar</a>
+        </h1>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li class="nav-li">
+              <a class="nav-link" href="index.html">home</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-link current-page" href="projects.html">projects</a>
+            </li>
+            <!-- <li class="nav-li">
                         <a class="nav-link" href="blogs.html">blogs</a>
                     </li> -->
-                </ul>
-            </nav>
-        </div>        
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section>
-        <div class="container">
-            <div class="main-info">
-                <div>
-                    <p class="name first-name">my</p>
-                    <p class="name last-name">projects</p>
-                    <p class="message">hey there! welcome to my projects!</p>
-                </div>
-            </div>
-            <img src="./assets/hero-projects.svg" alt="" class="img-hero">
+      <div class="container">
+        <div class="main-info">
+          <div>
+            <p class="name first-name">my</p>
+            <p class="name last-name">projects</p>
+            <p class="message">hey there! welcome to my projects!</p>
+          </div>
         </div>
-        <div class="projects">
-
-            <div class="project-item">
-                <h3>finance tracker</h3>
-                <img src="./assets/project-finance-tracker.png" class="project-img"/>
-                <p>
-                    finance tracker is a cloud-based web app, used to log expenses on a clean
-                    and minimal ui. Built using: React, Firebase (Auth & Firestore database) &
-                    React Router
-                </p>
-                <a href="https://kedar-finance-tracker.netlify.app/" target="_blank" class="link-demo link-red">demo</a>
-                <a href="https://github.com/kedaroo/finance-tracker" target="_blank" class="link-source link-red-light">see source</a>
-            </div>
-
-            <div class="project-item">
-                <h3>memory game</h3>
-                <img src="./assets/project-memory-game.png" class="project-img"/>
-                <p>
-                    memory game is a classic card game. 6 pairs of matching cards are
-                    laid out in a grid. player has to turn over matching pair in minimum 
-                    number of turns. Built using: React
-                </p>
-                <a href="https://kedar-memory-game.netlify.app/" target="_blank" class="link-demo link-orange">demo</a>
-                <a href="https://github.com/kedaroo/memory-game" target="_blank" class="link-source link-orange-light">see source</a>
-            </div>
-
-            <div class="project-item">
-                <h3>recipe directory</h3>
-                <img src="./assets/project-recipe-directory.png" class="project-img"/>
-                <p>
-                    recipe directory is an online directory of delicacies from all around the world.
-                    users can contribute by adding new recipes using a form. Built using: 
-                    React, Firebase Firestore & React Router
-                </p>
-                <a href="https://kedar-recipe-directory.netlify.app/" target="_blank" class="link-demo link-blue">demo</a>
-                <a href="https://github.com/kedaroo/recipe-directory" target="_blank" class="link-source link-blue-light">see source</a>
-            </div>
-
-            <div class="project-item">
-                <h3>lucky birthday</h3>
-                <img src="./assets/project-lucky-birthday.png" class="project-img"/>
-                <p>
-                    lucky birthday app takes in your birthday and tells whether your birthday is 
-                    lucky or not based on your lucky number. the tool is just for fun! Built using: Vanilla JS, HTML, CSS
-                </p>
-                <a href="https://kedar-lucky-birthday.netlify.app/" target="_blank" class="link-demo link-gray">demo</a>
-                <a href="https://github.com/kedaroo/lucky-birthday" target="_blank" class="link-source link-gray-light">see source</a>
-            </div>
-
-            <div class="project-item">
-                <h3>cash register</h3>
-                <img src="./assets/project-cash-register.png" class="project-img"/>
-                <p>
-                    cash register app takes in an odd number of bill amount (e.g. $520) and the total cash tendered (e.g. $600)
-                    and returns total money to be returned in specific currency denominations (e.g. $50 x 1, $10 x 3)
-                    Built using: Vanilla JS, HTML, CSS
-                </p>
-                <a href="https://kedar-cash-register.netlify.app/" target="_blank" class="link-demo link-red">demo</a>
-                <a href="https://github.com/kedaroo/cash-register" target="_blank" class="link-source link-red-light">see source</a>
-            </div>
-
-            <div class="project-item">
-                <h3>minion translator</h3>
-                <img src="./assets/project-minion-translator.png" class="project-img"/>
-                <p>
-                    minion translator translates your english text into the language of the minions from 'Despicable Me'
-                    movies! it is build using an api from 
-                    <a href="https://funtranslations.com/" target="_blank", style="color: violet;">
-                        funtranslations.com
-                    </a>
-                    Build using: React
-                </p>
-                <a href="https://kedar-minion-translator.netlify.app/" target="_blank" class="link-demo link-orange">demo</a>
-                <a href="https://github.com/kedaroo/minion-speak" target="_blank" class="link-source link-orange-light">see source</a>
-            </div>
-
-            <div class="project-item">
-                <h3>emoji interpreter</h3>
-                <img src="./assets/project-emoji-interpreter.png" class="project-img"/>
-                <p>
-                    emoji interpreter describes the meaning of any emoji. you can either select an emoji from a bar 
-                    or enter your own in an input box.
-                    Build using: React
-                </p>
-                <a href="https://kedar-emoji-interpreter.netlify.app/" target="_blank" class="link-demo link-blue">demo</a>
-                <a href="https://github.com/kedaroo/emoji-interpreter" target="_blank" class="link-source link-blue-light">see source</a>
-            </div>
-
-            <div class="project-item">
-                <h3>one time modal</h3>
-                <img src="./assets/project-one-time-modal.png" class="project-img"/>
-                <p>
-                    one time modal is a modal that shows itself only if the user is visiting the site for the first time.
-                    it comes in very handy during onboarding process of an app, e.g. rules/instructions/how-to can be shown 
-                    effectively using this. Build using: Vanilla JS, HTML, CSS
-                </p>
-                <a href="https://one-time-modal.netlify.app/" target="_blank" class="link-demo link-gray">demo</a>
-                <a href="https://github.com/kedaroo/one-time-modal" target="_blank" class="link-source link-gray-light">see source</a>
-            </div>
-
-            <div class="project-item">
-                <h3>tweet length checker</h3>
-                <img src="./assets/project-tweet-length-checker.png" class="project-img"/>
-                <p>
-                    tweet length checker shows an input box for drafting of tweets; total character count
-                    is displayed at bottom right corner. if the character limit is reached, another tweet can be added
-                    to form a thread. Build using: React
-                </p>
-                <a href="https://kedar-tweet-length-checker.netlify.app/" target="_blank" class="link-demo link-red">demo</a>
-                <a href="https://github.com/kedaroo/tweet-length-checker" target="_blank" class="link-source link-red-light">see source</a>
-            </div>
-            
+        <img src="./assets/hero-projects.svg" alt="" class="img-hero" />
+      </div>
+      <div class="projects">
+        <div class="project-item">
+          <h3>devCase</h3>
+          <img src="./assets/project-devCase.jpg" class="project-img" />
+          <p>
+            devCase helps developers build their portfolio website to showcase
+            their skills to recruiters in minutes. It leverages users' GitHub,
+            Twitter, and Hashnode to build a portfolio. Built using Next.js,
+            Twitter API, GitHub API, and Hashnode API. devCase is one of the
+            winners at Crossknot Hacks Hackathon✨
+          </p>
+          <a
+            href="https://devcase.vercel.app/"
+            target="_blank"
+            class="link-demo link-red"
+            >demo</a
+          >
+          <a
+            href="https://github.com/kedaroo/devCase"
+            target="_blank"
+            class="link-source link-red-light"
+            >see source</a
+          >
         </div>
+
+        <div class="project-item">
+          <h3>ev trip planner</h3>
+          <img src="./assets/project-ev-trip-planner.png" class="project-img" />
+          <p>
+            EVs come with 2 main challenges; limited range and scarcity of
+            chargers outside of cities. EV Trip Planner helps plan a detailed
+            itinerary for long-distance EV journeys by taking into account the
+            vehicle's total battery capacity, energy efficiency, and
+            charging/discharging characteristics. The app can be used all around
+            the world. Built using React, Material UI, and HERE Maps API.
+          </p>
+          <a
+            href="https://ev-trip-planner.vercel.app/"
+            target="_blank"
+            class="link-demo link-red"
+            >demo</a
+          >
+          <a
+            href="https://github.com/kedaroo/trip-planner"
+            target="_blank"
+            class="link-source link-red-light"
+            >see source</a
+          >
+        </div>
+
+        <div class="project-item">
+            <h3>dojo - project manager</h3>
+            <img src="./assets/project-dojo.png" class="project-img" />
+            <p>
+                Dojo is a project management app, which comes with the following set of features:
+                - Add new projects
+                - Assign collaborators
+                - Live chatting between collaborators
+                - Online/offline status badge.
+                Built using React and Firebase
+            </p>
+            <a
+              href="https://project-management-app-psi.vercel.app/"
+              target="_blank"
+              class="link-demo link-orange"
+              >demo</a
+            >
+            <a
+              href="https://github.com/kedaroo/project-management-app"
+              target="_blank"
+              class="link-source link-orange-light"
+              >see source</a
+            >
+          </div>
+
+        <div class="project-item">
+          <h3>finance tracker</h3>
+          <img src="./assets/project-finance-tracker.png" class="project-img" />
+          <p>
+            finance tracker is a cloud-based web app, used to log expenses on a
+            clean and minimal ui. Built using: React, Firebase (Auth & Firestore
+            database) & React Router
+          </p>
+          <a
+            href="https://kedar-finance-tracker.netlify.app/"
+            target="_blank"
+            class="link-demo link-red"
+            >demo</a
+          >
+          <a
+            href="https://github.com/kedaroo/finance-tracker"
+            target="_blank"
+            class="link-source link-red-light"
+            >see source</a
+          >
+        </div>
+
+        <div class="project-item">
+          <h3>memory game</h3>
+          <img src="./assets/project-memory-game.png" class="project-img" />
+          <p>
+            memory game is a classic card game. 6 pairs of matching cards are
+            laid out in a grid. player has to turn over matching pair in minimum
+            number of turns. Built using: React
+          </p>
+          <a
+            href="https://kedar-memory-game.netlify.app/"
+            target="_blank"
+            class="link-demo link-orange"
+            >demo</a
+          >
+          <a
+            href="https://github.com/kedaroo/memory-game"
+            target="_blank"
+            class="link-source link-orange-light"
+            >see source</a
+          >
+        </div>
+
+        <div class="project-item">
+          <h3>recipe directory</h3>
+          <img
+            src="./assets/project-recipe-directory.png"
+            class="project-img"
+          />
+          <p>
+            recipe directory is an online directory of delicacies from all
+            around the world. users can contribute by adding new recipes using a
+            form. Built using: React, Firebase Firestore & React Router
+          </p>
+          <a
+            href="https://kedar-recipe-directory.netlify.app/"
+            target="_blank"
+            class="link-demo link-blue"
+            >demo</a
+          >
+          <a
+            href="https://github.com/kedaroo/recipe-directory"
+            target="_blank"
+            class="link-source link-blue-light"
+            >see source</a
+          >
+        </div>
+
+        <div class="project-item">
+          <h3>lucky birthday</h3>
+          <img src="./assets/project-lucky-birthday.png" class="project-img" />
+          <p>
+            lucky birthday app takes in your birthday and tells whether your
+            birthday is lucky or not based on your lucky number. the tool is
+            just for fun! Built using: Vanilla JS, HTML, CSS
+          </p>
+          <a
+            href="https://kedar-lucky-birthday.netlify.app/"
+            target="_blank"
+            class="link-demo link-gray"
+            >demo</a
+          >
+          <a
+            href="https://github.com/kedaroo/lucky-birthday"
+            target="_blank"
+            class="link-source link-gray-light"
+            >see source</a
+          >
+        </div>
+
+        <div class="project-item">
+          <h3>cash register</h3>
+          <img src="./assets/project-cash-register.png" class="project-img" />
+          <p>
+            cash register app takes in an odd number of bill amount (e.g. $520)
+            and the total cash tendered (e.g. $600) and returns total money to
+            be returned in specific currency denominations (e.g. $50 x 1, $10 x
+            3) Built using: Vanilla JS, HTML, CSS
+          </p>
+          <a
+            href="https://kedar-cash-register.netlify.app/"
+            target="_blank"
+            class="link-demo link-red"
+            >demo</a
+          >
+          <a
+            href="https://github.com/kedaroo/cash-register"
+            target="_blank"
+            class="link-source link-red-light"
+            >see source</a
+          >
+        </div>
+
+        <div class="project-item">
+          <h3>minion translator</h3>
+          <img
+            src="./assets/project-minion-translator.png"
+            class="project-img"
+          />
+          <p>
+            minion translator translates your english text into the language of
+            the minions from 'Despicable Me' movies! it is build using an api
+            from
+            <a
+              href="https://funtranslations.com/"
+              target="_blank"
+              ,
+              style="color: violet"
+            >
+              funtranslations.com
+            </a>
+            Build using: React
+          </p>
+          <a
+            href="https://kedar-minion-translator.netlify.app/"
+            target="_blank"
+            class="link-demo link-orange"
+            >demo</a
+          >
+          <a
+            href="https://github.com/kedaroo/minion-speak"
+            target="_blank"
+            class="link-source link-orange-light"
+            >see source</a
+          >
+        </div>
+
+        <div class="project-item">
+          <h3>emoji interpreter</h3>
+          <img
+            src="./assets/project-emoji-interpreter.png"
+            class="project-img"
+          />
+          <p>
+            emoji interpreter describes the meaning of any emoji. you can either
+            select an emoji from a bar or enter your own in an input box. Build
+            using: React
+          </p>
+          <a
+            href="https://kedar-emoji-interpreter.netlify.app/"
+            target="_blank"
+            class="link-demo link-blue"
+            >demo</a
+          >
+          <a
+            href="https://github.com/kedaroo/emoji-interpreter"
+            target="_blank"
+            class="link-source link-blue-light"
+            >see source</a
+          >
+        </div>
+
+        <div class="project-item">
+          <h3>one time modal</h3>
+          <img src="./assets/project-one-time-modal.png" class="project-img" />
+          <p>
+            one time modal is a modal that shows itself only if the user is
+            visiting the site for the first time. it comes in very handy during
+            onboarding process of an app, e.g. rules/instructions/how-to can be
+            shown effectively using this. Build using: Vanilla JS, HTML, CSS
+          </p>
+          <a
+            href="https://one-time-modal.netlify.app/"
+            target="_blank"
+            class="link-demo link-gray"
+            >demo</a
+          >
+          <a
+            href="https://github.com/kedaroo/one-time-modal"
+            target="_blank"
+            class="link-source link-gray-light"
+            >see source</a
+          >
+        </div>
+
+        <div class="project-item">
+          <h3>tweet length checker</h3>
+          <img
+            src="./assets/project-tweet-length-checker.png"
+            class="project-img"
+          />
+          <p>
+            tweet length checker shows an input box for drafting of tweets;
+            total character count is displayed at bottom right corner. if the
+            character limit is reached, another tweet can be added to form a
+            thread. Build using: React
+          </p>
+          <a
+            href="https://kedar-tweet-length-checker.netlify.app/"
+            target="_blank"
+            class="link-demo link-red"
+            >demo</a
+          >
+          <a
+            href="https://github.com/kedaroo/tweet-length-checker"
+            target="_blank"
+            class="link-source link-red-light"
+            >see source</a
+          >
+        </div>
+      </div>
     </section>
 
     <footer>
-        <div class="container-footer">
-            <p class="text-center">stay connected!</p>
-            <ul class="socials-list">
-                <li class="socials-list-item">
-                    <a href="https://twitter.com/BasutkarKedar" target="_blank">
-                        <i class="fa-brands fa-twitter social-icon"></i>
-                    </a>
-                </li>
-                <li class="socials-list-item">
-                    <a href="https://github.com/kedaroo" target="_blank">
-                        <i class="fa-brands fa-github social-icon"></i>
-                    </a>
-                </li>
-                <li class="socials-list-item">
-                    <a href="https://www.linkedin.com/in/kedar-basutkar-67b30a216/" target="_blank">
-                        <i class="fa-brands fa-linkedin-in social-icon"></i>
-                    </a>
-                </li>
-            </ul>
-            <div class="footer-list">
-                <p class="footer-name">
-                    <a href="index.html">kedar basutkar</a>
-                </p>
-                <p class="copyright-text">© 2022 kedar basutkar. all rights reserved</p>
-            </div>
-            <table>
-                <tr>
-                    <td class="color1"></td>
-                    <td class="color2"></td>
-                    <td class="color3"></td>
-                    <td class="color4"></td>
-                </tr>
-            </table>
+      <div class="container-footer">
+        <p class="text-center">stay connected!</p>
+        <ul class="socials-list">
+          <li class="socials-list-item">
+            <a href="https://twitter.com/BasutkarKedar" target="_blank">
+              <i class="fa-brands fa-twitter social-icon"></i>
+            </a>
+          </li>
+          <li class="socials-list-item">
+            <a href="https://github.com/kedaroo" target="_blank">
+              <i class="fa-brands fa-github social-icon"></i>
+            </a>
+          </li>
+          <li class="socials-list-item">
+            <a
+              href="https://www.linkedin.com/in/kedar-basutkar-67b30a216/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in social-icon"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-list">
+          <p class="footer-name">
+            <a href="index.html">kedar basutkar</a>
+          </p>
+          <p class="copyright-text">
+            © 2022 kedar basutkar. all rights reserved
+          </p>
         </div>
-    </footer>    
-
-</body>
+        <table>
+          <tr>
+            <td class="color1"></td>
+            <td class="color2"></td>
+            <td class="color3"></td>
+            <td class="color4"></td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+  </body>
 </html>
